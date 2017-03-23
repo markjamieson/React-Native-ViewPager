@@ -32,5 +32,8 @@
   "bugs": {
     "url": "https://github.com/zbtang/React-Native-ViewPager/issues"
   },
-  "homepage": "https://github.com/zbtang/React-Native-ViewPager#readme"
+  "homepage": "https://github.com/zbtang/React-Native-ViewPager#readme",
+  "dependencies": {
+    "react-native-invertible-scroll-view": "github:markjamieson/react-native-invertible-scroll-view#ffd23fbf6ed769eb9f1826f37269970537a30565"
+  }
 }
