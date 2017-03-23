@@ -6,6 +6,7 @@
 
 import React, {Component} from 'react';
 import {StyleSheet, View, ViewPagerAndroid, ScrollView, Platform, PanResponder} from 'react-native';
+import InvertibleScrollView from 'react-native-invertible-scroll-view';
 
 const SCROLLVIEW_REF = 'scrollView';
 const VIEWPAGER_REF = 'viewPager';
@@ -86,10 +87,10 @@ export default class ViewPager extends Component {
           marginHorizontal: -this.props.pageMargin / 2,
         };
         if (this.props.style && !this.props.style.height)
-            return <ScrollView {...props} style={[this.props.style, scrollViewStyle]}/>;
+            return <InvertibleScrollView {...props} style={[this.props.style, scrollViewStyle]}/>;
         else return (
             <View style={this.props.style}>
-                <ScrollView {...props} style={scrollViewStyle}/>
+                <InvertibleScrollView {...props} style={scrollViewStyle}/>
             </View>
         );
     }
